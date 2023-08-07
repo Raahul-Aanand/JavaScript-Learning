@@ -6,8 +6,21 @@
 
 // var test ;
 
-test();
+// test();
 
-function test(){
-   console.log("Helllo !!");
+// function test() {
+//   console.log("Helllo !!");
+// }
+
+//hoisting is method to ac
+//acess variable and function before initialize it
+
+var x = 7;
+
+function getName() {
+  console.log("Hoisting");
 }
+
+// getName();
+// console.log(getName);
+// console.log(x);

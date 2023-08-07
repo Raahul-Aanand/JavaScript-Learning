@@ -17,7 +17,7 @@ promiseOne.then(function () {
 
 new Promise(function (resolve, reject) {
   setTimeout(() => {
-    console.log("Asys task two");
+    console.log("Async task two");
     resolve();
   }, 1000);
 }).then(() => console.log("Async two resolve"));
@@ -82,3 +82,32 @@ async function consumePromiseFive() {
 }
 
 consumePromiseFive();
+
+// async function getAllUsers() {
+//   const response = await fetch("https://jsonplaceholder.typicode.com/users");
+//   const data = response.json();
+//   console.log(data);
+// }
+
+async function getAllUsers() {
+  try {
+    const response = await fetch("https://jsonplaceholder.typicode.com/users");
+    console.log(response);
+    const data = await response.json();
+    console.log(data);
+  } catch (error) {
+    console.log("Err: ", error);
+  }
+}
+
+// getAllUsers();
+
+fetch("https://api.github.com/users/Rahul00154")
+  .then((response) => {
+    //here link is response
+    return response.json();
+  }) //here data is return value of response.json
+  .then((data) => console.log(data))
+  .catch((error) => {
+    console.log(error);
+  });

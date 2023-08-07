@@ -85,5 +85,14 @@
 // };
 // console.log(sum(1, 3));
 
-let sum = (a, b) => a + b;
-console.log(sum(2, 3));
+// let sum = (a, b) => a + b;
+// console.log(sum(2, 3));
+
+var a = 10;
+
+function b() {
+  var x = 1;
+}
+console.log(this.a);
+console.log(window.a);
+console.log(a);
