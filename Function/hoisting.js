@@ -12,7 +12,7 @@
 //   console.log("Helllo !!");
 // }
 
-//hoisting is method to ac
+//hoisting is method to 
 //acess variable and function before initialize it
 
 var x = 7;
