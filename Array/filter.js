@@ -43,3 +43,29 @@ userBooks = books.filter((bk) => {
 });
 
 console.log(userBooks);
+
+const users = [
+  { firstName: "Rahul", lastName: "Anand", age: 26 },
+  { firstName: "Donald", lastName: "Trump", age: 77 },
+  { firstName: "Deepika", lastName: "Padukone", age: 26 },
+  { firstName: "Abhishek", lastName: "Singh", age: 24 },
+];
+
+const output = users
+  .filter((user) => {
+    return user.age < 30;
+  })
+  .map((user) => {
+    return user.firstName;
+  });
+
+console.log(output);
+
+const output1 = users.reduce(function (acc, curr) {
+  if (curr.age < 30) {
+    acc.push(curr.firstName);
+  }
+  return acc;
+}, []);
+
+console.log(output1);

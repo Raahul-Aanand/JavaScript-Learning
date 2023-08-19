@@ -1,129 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>html Events</title>
-  </head>
-  <body style="background-color: #414141; color: aliceblue">
-    <h2>Amazing image</h2>
-    <div>
-      <ul id="images">
-        <li>
-          <img
-            width="200px"
-            id="photoshop"
-            src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
-            alt="photoshop"
-          />
-        </li>
-        <li>
-          <img
-            width="200px"
-            id="japan"
-            src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
-            alt=""
-          />
-        </li>
-        <li>
-          <img
-            width="200px"
-            id="river"
-            src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
-            alt=""
-          />
-        </li>
-        <li>
-          <img width="200px" id="owl"
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>html Events</title>
+</head>
+
+<body style="background-color: #414141; color: aliceblue">
+  <h2>Amazing image</h2>
+  <div>
+    <ul id="images">
+      <li>
+        <img width="200px" id="photoshop"
+          src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+          alt="photoshop" />
+      </li>
+      <li>
+        <img width="200px" id="japan"
+          src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+          alt="" />
+      </li>
+      <li>
+        <img width="200px" id="river"
+          src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+          alt="" />
+      </li>
+      <li>
+        <img width="200px" id="owl"
           src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
-          alt=""
-        </li>
-        <li>
-          <img
-            width="200px"
-            id="prayer"
-            src="https://images.pexels.com/photos/2522671/pexels-photo-2522671.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
-            alt=""
-          />
-        </li>
-        <li>
-          <a style="color: aliceblue" href="https://google.com" id="google"
-            >Google</a
-          >
-        </li>
-      </ul>
-    </div>
-  </body>
-  <script>
-    // document.getElementById("owl").onclick = function () {
-    //   alert("owl clicked");
-    // };
+          alt="" </li>
+      <li>
+        <img width="200px" id="prayer"
+          src="https://images.pexels.com/photos/2522671/pexels-photo-2522671.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+          alt="" />
+      </li>
+      <li>
+        <a style="color: aliceblue" href="https://google.com" id="google">Google</a>
+      </li>
+    </ul>
+  </div>
+</body>
+<script>
+  // document.getElementById("owl").onclick = function () {
+  //   alert("owl clicked");
+  // };
 
-    // document.getElementById("owl").addEventListener(
-    //   "click",
-    //   function (e) {
-    //     console.log(e);
-    //   }
-    //   // true  false
-    // );
+  // document.getElementById("owl").addEventListener(
+  //   "click",
+  //   function (e) {
+  //     console.log(e);
+  //   }
+  //   // true  false
+  // );
 
-    //type of event
-    //time stamp
-    //Default Prevented
-    //target, toElement
-    //srcElement
-    //currentTarget
+  //type of event
+  //time stamp
+  //Default Prevented
+  //target, toElement
+  //srcElement
+  //currentTarget
 
-    //clientX,clientY,screeX,screenY
-    //altKey, ctrlKey, shiftKey, keyCode
+  //clientX,clientY,screeX,screenY
+  //altKey, ctrlKey, shiftKey, keyCode
 
-    //Browser Event and Environment Event
+  //Browser Event and Environment Event
 
-    //attachEvent()
-    //jqery ->on
+  //attachEvent()
+  //jqery ->on
 
-    //*Event Propagation
-    // 1. event Bubbling  false default
-    // 2. event capturing true
+  //*Event Propagation
+  // 1. event Bubbling  false default
+  // 2. event capturing true
 
-    // document.getElementById("owl").addEventListener(
-    //   "click",
-    //   function (e) {
-    //     console.log("Owl Clicked");
-    //     e.stopPropagation(); //to exit bubbling
-    //   }
-    //   // true  false
-    // );
-    // //Event Capturing :- Top to Bottom means first parent then childrem
-    // //event Bubbling :- bottom To top child->parent->grandParent
-    // document.getElementById("images").addEventListener(
-    //   "click",
-    //   function (e) {
-    //     console.log("clicked inside list");
-    //     e.stopPropagation();
-    //   }
-    //   // true  false
-    // );
+  // document.getElementById("owl").addEventListener(
+  //   "click",
+  //   function (e) {
+  //     console.log("Owl Clicked");
+  //     e.stopPropagation(); //to exit bubbling
+  //   }
+  //   // true  false
+  // );
+  // //Event Capturing :- Top to Bottom means first parent then childrem
+  // //event Bubbling :- bottom To top child->parent->grandParent
+  // document.getElementById("images").addEventListener(
+  //   "click",
+  //   function (e) {
+  //     console.log("clicked inside list");
+  //     e.stopPropagation();
+  //   }
+  //   // true  false
+  // );
 
-    document.getElementById("google").addEventListener("click", function (e) {
-      e.preventDefault();
-      e.stopPropagation();
-      console.log("google clicked");
-    });
+  document.getElementById("google").addEventListener("click", function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    console.log("google clicked");
+  });
 
-    document.querySelector("#images").addEventListener(
-      "click",
-      function (e) {
-        console.log(e.target.tagName);
-        console.log(e.target.parentNode);
-        if ((e.target.tagName = "IMG")) {
-          console.log(e.target.id);
-          let removeIt = e.target.parentNode;
-          removeIt.remove();
-        }
-        // removeIt.parentNode.removeChile(removeIt)
-      },
-      false
-    );
-  </script>
+  document.querySelector("#images").addEventListener(
+    "click",
+    function (e) {
+      console.log(e.target.tagName);
+      console.log(e.target.parentNode);
+      if ((e.target.tagName = "IMG")) {
+        console.log(e.target.id);
+        let removeIt = e.target.parentNode;
+        removeIt.remove();
+      }
+      // removeIt.parentNode.removeChild(removeIt)
+    },
+    false
+  );
+</script>
+
 </html>

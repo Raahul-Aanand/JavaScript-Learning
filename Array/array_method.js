@@ -72,3 +72,29 @@ let score3 = 300;
 
 //Of:- returns a new array from set of elements
 console.log(Array.of(score1, score2, score3));
+
+const users = [
+  { firstName: "Rahul", lastName: "Anand", age: 26 },
+  { firstName: "Donald", lastName: "Trump", age: 77 },
+  { firstName: "Deepika", lastName: "Padukone", age: 26 },
+  { firstName: "Abhishek", lastName: "Singh", age: 24 },
+];
+
+//list of fullName
+// ["rahul Anand",donald Trump]
+
+const output = users.map((x) => {
+  return x.firstName + " " + x.lastName;
+});
+console.log(output);
+
+const output2 = users.reduce(function (acc, curr) {
+  if (acc[curr.age]) {
+    acc[curr.age] = ++acc[curr.age];
+  } else {
+    acc[curr.age] = 1;
+  }
+  return acc;
+}, {});
+
+console.log(output2);
