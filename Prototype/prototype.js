@@ -9,7 +9,7 @@ prototype object has a prototype of its own, and so on until an object is reache
 
 
 
-prototypes ar the mechanism by which javaScript object inherit feature from one another
+prototypes are the mechanism by which javaScript object inherit feature from one another
 */
 
 // let myName = "rahul    ";

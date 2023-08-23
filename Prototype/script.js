@@ -1,3 +1,4 @@
+//Prototypes are the mechanism by which javascript object inherit features from one another
 const arr = ["Rahul", "Supiiriiya"];
 
 let object = {

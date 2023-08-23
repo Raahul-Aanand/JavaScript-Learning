@@ -48,3 +48,4 @@ c();
 //No need to use parenthesis In case of single Parameter
 //No need to use curley{} if single line of  code in function
 //No need to use return statement if single line code in function
+//hoisting is not possible of arrow function
