@@ -21,7 +21,7 @@ let obj = {
 let name = "anil";
 let name1 = name;
 
-//when we assign variable to other variable and change some value to other variable then they ar not visible in first variable because variable is copied via value
+//when we assign variable to other variable and change some value to other variable then they are not visible in first variable because variable is copied via value
 
 name1 = "anand";
 console.log(name);
@@ -71,3 +71,12 @@ shallowCopy.address.city = "New Delhi";
 
 console.log(person.address.city);
 console.log(shallowCopy.address.city);
+
+//a shallow copy creates a new object that copies the properties of original object, but it maintains reference to any nested objects.
+
+//changes made to nested objects will affect both the original and copied object
+
+//A deep copy creates enitirely a new object with all nested objects.
+
+//In deep copy changes to nested object will not affect the origial objects or any other copies
+//to achieve a deep copy we need to use json.parse and json.stringify

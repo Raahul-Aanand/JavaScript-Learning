@@ -96,3 +96,61 @@ console.log(mul(4)(5));
 
 //infinite currying
 //sum(a)(b)(c)...(n);
+
+function add(a) {
+  return function (b) {
+    //check whether b param is empty or not
+    if (b) return add(a + b);
+    else return a;
+  };
+}
+
+console.log(add(5)(4)(5)(6)(7)(8)());
+
+//currying vs partial application
+//partial application transforms a function into another function with small irites that means number of operanda or arguements function received
+
+function sum1(a) {
+  return function (b, c) {
+    return a + b + c;
+  };
+}
+
+const x = sum1(20);
+console.log(x(6, 7));
+console.log(x(8, 9));
+
+//or
+
+console.log(sum1(20)(4, 5));
+
+//usiing currying dom manipulation
+
+function updateElementText(id) {
+  return function (content) {
+    document.querySelector("#" + id).textContent = content;
+  };
+}
+
+const updateHeader = updateElementText("heading");
+updateHeader("Hello Rahul Anand");
+
+//curry() implementaion
+//converts f(a,b,c) into f(a)(b)(c)
+
+function curry(func) {
+  return function curriedFunc(...args) {
+    console.log(args.length, func.length);
+    if (args.length >= func.length) {
+      return func(...args);
+    } else {
+      return function (...next) {
+        return curriedFunc(...args, ...next);
+      };
+    }
+  };
+}
+
+const sum2 = (a, b, c) => a + b + c;
+const totalSum = curry(sum2);
+console.log(totalSum(4)(5));

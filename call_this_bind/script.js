@@ -15,7 +15,7 @@ const name2 = {
   lastName: "Tendulkar",
 };
 
-//By call method we can borrow function from other oject and use wiht data of some other object.
+//By call method we can borrow function from other oject and use with data of some other object.
 
 printfullName.apply(name2, ["Patna", "Bihar"]);
 //first arguement is always referece to this variable
