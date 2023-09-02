@@ -1,6 +1,6 @@
 //Arrays
 
-let dishes = ["Biryani","Chat","Dhosa"];
+let dishes = ["Biryani", "Chat", "Dhosa"];
 
 //Access
 console.log(dishes[2]);
@@ -17,7 +17,7 @@ console.log(dishes.join("-"));
 console.log(dishes.indexOf("Chhole")); //case sensitive
 
 //concat method
-let newDishes = ["sweets","Gulab-Jamun"];
+let newDishes = ["sweets", "Gulab-Jamun"];
 console.log(dishes.concat(newDishes));
 let updatedDishes = dishes.concat(newDishes);
 

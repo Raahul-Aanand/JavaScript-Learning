@@ -41,7 +41,7 @@ function User(userName, loginCount, isLoggedIn) {
   return this;
 }
 
-// new keyword first time it create new object
+//* new keyword first time it create new object
 //second constructor function call hota hai new keyword ke karan
 
 //constructor function karta ye hai ki jitne bhi arguement wegrah hn aapke ppss unhe pack krkr deta hai aapko

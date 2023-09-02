@@ -25,7 +25,7 @@ This grows the code horizontally instead of vertically. That mechanism is known 
 //inversion of control
 //you loose the control of our code while using callback
 
-/* 
+/*   
 The callback function is passed to another callback, this way we lose the control of our code. We don't know what is happening behind the scene and the program becomes very difficult to maintain. 
 That process is called inversion of control. 
 */
