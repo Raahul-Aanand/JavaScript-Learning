@@ -120,3 +120,54 @@ const add = (function () {
 add();
 add();
 add();
+
+const luke = {
+  firstName: "Luke",
+  lastName: "Skywalker",
+  occupation: "Jedi Knight",
+};
+
+const map = new Map(Object.entries(luke));
+console.log(map);
+
+const obj = Object.fromEntries(map);
+console.log(obj);
+
+const map1 = new Map();
+
+map1.set("1", "String one");
+map1.set(1, "This will be overwrtten");
+map1.set(1, "number one");
+map1.set(true, "A boolean");
+
+console.log(map1);
+
+console.log(obj[1] === obj["1"]);
+
+const objAsKey = { foo: "barr" };
+
+const obj1 = {
+  [objAsKey]: "What will happen",
+};
+console.log(obj1);
+
+const map2 = new Map();
+map2.set(objAsKey, "What will happen?");
+console.log(map2);
+
+//A set is designed for storing a collection of unique values
+//it doesn't associate values with keys. it only stores individual values.
+const uniqueNum = new Set();
+uniqueNum.add(1);
+uniqueNum.add(2);
+uniqueNum.add(2);
+uniqueNum.add(3);
+
+console.log(uniqueNum);
+console.log(uniqueNum.has(1));
+console.log(uniqueNum.size);
+console.log(uniqueNum.delete(3));
+console.log(uniqueNum);
+
+//A map is designed for storing key value pairs where each value associated with unique key.
+//it allows you to associate data with specific identifier.

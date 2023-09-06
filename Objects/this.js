@@ -37,7 +37,7 @@ check();
 
 //The value of the this keyword is determined by calling context the way in which the function is called.
 //when you have not any calling context it always point to window object
-//But in case if you have calling context it always point to calling of a function
+//But in case if you have calling context it always point to calling   of a function
 
 const person1 = {
   checkThis: function () {

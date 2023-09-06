@@ -46,6 +46,6 @@ const [first, ...rest] = [1, 2, 4, 5, 7, 8];
 console.log(first);
 console.log(rest);
 
-//spread operator: expanands elements of array,objects or function arguementts
+//spread operator:- expanands elements of array,objects or function arguementts
 
 //rest:collects elements of array or function arguments into container

@@ -25,7 +25,7 @@
 
 //promise is an object representing the eventual completion or failure of an asynchronous operation.
 
-//promise helps us to handle callback hell and it can be done throug promise chaining.
+//promise helps us to handle callback hell and it can be done through promise chaining.
 
 // createOrder(cart)
 //   .then(function (orderId) {

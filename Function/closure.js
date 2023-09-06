@@ -119,12 +119,12 @@ a closure gives you access to an outer function's scope from an inner function e
 // z();
 
 // function close(b) {
-//   // var a = 5;
+// var a = 5;
 //   function inner() {
 //     console.log(a, b);
 //   }
-//   // var a = 10;
-//   // there is no problem in accessing the outer variable if variable is declared wherever in the parent function
+// var a = 10;
+// there is no problem in accessing the outer variable if variable is declared wherever in the parent function
 //   let a = 10; //in let case there is also no issue in accessing the outer variable
 //   return inner;
 // }
@@ -146,7 +146,7 @@ function outest() {
   return outer;
 }
 let c = 100;
-//whenever we are going to access variable that present in not their scope then it will be looking for that in their parent scope if also that is not preset then it looking in their grandparent scope
+//*whenever we are going to access variable that present in not their scope then it will be looking for that in their parent scope if also that is not preset then it looking in their grandparent scope this is called scope chain
 
 var outer1 = outest()("Hello Baby");
 outer1();
