@@ -64,7 +64,7 @@ a closure gives you access to an outer function's scope from an inner function e
 //   }
 //   function innerOne() {
 //     console.log("innerOne", a);
-//     // console.log("innerOne", b);
+//      console.log("innerOne", b);
 //   }
 //   inner();
 //   innerOne();
